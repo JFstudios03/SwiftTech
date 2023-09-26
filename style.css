@@ -30,6 +30,54 @@ body {
 .main-btn:hover{
     background: linear-gradient(85deg, rgb(243, 45, 19), rgb(252, 82, 59));
 }
+.zoomhv{
+    transition: all ease-in-out 1s;
+}
+.zoomhv:hover{
+    /* transform: translateY(-7px); */
+    transform: scale(1.05);
+}
+.fade-in-top {
+	-webkit-animation: fade-in-top 0.8s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	animation: fade-in-top 0.8s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@-webkit-keyframes fade-in-top {
+    0% {
+      -webkit-transform: translateY(-50px);
+        transform: translateY(-50px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+        transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  @keyframes fade-in-top {
+    0% {
+      -webkit-transform: translateY(-50px);
+        transform: translateY(-50px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+        transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  .zouse-cont, .pf-cont, .halal-cont, .tub-cont{
+    transition: all ease-in-out 0.5s;
+  }
+  .zouse-cont:hover, .pf-cont:hover, .halal-cont:hover, .tub-cont:hover{
+    transform: translateX(0px);
+  }
+  /* .more{
+    transition: 0.5s;
+  }
+  .more:hover{
+    font-weight: 700;
+  } */
 
 
 /* Header et Sub-header section */
@@ -296,13 +344,18 @@ nav {
     font-weight: 600;
     line-height: 21px;
     letter-spacing: -0.015em;
-    background-color: rgba(255, 215, 223, 1);
+    background: rgba(255, 215, 223, 1);
     border: none;
     color: rgba(255, 73, 49);
     padding: 8px 24px;
     border-radius: 4px;
     border: 1px;
     margin: 56px auto auto;
+    transition: 0.8s;
+}
+.see-more:hover {
+    /* background: #000000; */
+    font-weight: 900;
 }
 .strat{
     background-color: rgba(249, 250, 251, 1);
@@ -893,6 +946,9 @@ nav {
     width: 100%;
     box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.05);
 }
+.year-grid-col:hover{
+    background-color: rgba(255, 231, 228, 0.7);
+}
 .oya {
     width: 63%;
 }
@@ -906,7 +962,7 @@ nav {
     line-height: 24px;
     letter-spacing: -0.015em;
     text-align: left;
-    color: rgba(255, 73, 49, 1);
+    color: rgb(255, 105, 85);
 }
 
 
@@ -1241,6 +1297,12 @@ nav {
 }
 .team-col {
     margin-right: 32px;
+    transition: all ease-in-out 0.5s;
+}
+.team-col:hover{
+    background-color: rgba(255, 242, 240, 0.5);
+    transform: translateY(-10px);
+    padding-bottom: 5px;
 }
 .okay {
     margin: 0;
@@ -1419,6 +1481,10 @@ nav {
     box-shadow: 0px 10px 20px 0px rgba(143, 146, 161, 0.1);
     border-radius: 4px;
     margin-right: 24px;
+    transition: all ease-in-out 0.5s;
+}
+.location-card1:hover{
+    transform: translateY(-10px);
 }
 .out {
     border: none;
@@ -1503,6 +1569,11 @@ nav {
     cursor: pointer;
     margin: 30px 60px;
     padding: 0;
+    transition: all ease-in-out 0.5s;
+}
+.icon-col img:hover{
+    transform: translateY(-7px);
+
 }
 
 /* Main Footer */
